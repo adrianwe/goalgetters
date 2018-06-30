@@ -22,7 +22,7 @@ export default ({ data }) => {
             </div>
             <div>
               <label>Willst du dein Anliegen beschreiben?</label>
-              <input type='text' name='text' />
+              <input type='text' name='text' placeholder='Mein Anliegen' />
               <input type='submit' value='Abschicken' />
             </div>
           </form>
