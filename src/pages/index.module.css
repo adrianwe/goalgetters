@@ -1,0 +1,199 @@
+@import "../layouts/variables.css";
+
+/*Hero Image mit Slogan*/
+
+.sloganImageContainer {
+  width: 100vw;
+  max-width:100%;
+  height: 100vh;
+}
+
+.sloganImage {
+  width: 100vw;
+  max-width:100%;
+  height: 100vh;
+  object-fit: cover;  
+  object-position: center;
+}
+
+.sloganText {
+  color: var(--my-color3);
+  position: absolute;
+  top: 40vh;
+  left: 15vw;
+  font-size: 10rem;
+  line-height: 9rem;
+  text-align: center;
+  font-family: headerfont;
+  width: 50rem;
+}
+
+.sloganText:hover {
+  transition: color 0.5s ease;
+  color: var(--my-color3);
+  cursor: pointer;
+}
+
+/*Main Text*/
+
+.intro {
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 15rem;
+  padding-bottom: 10rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "intro-disclaimer intro-text";
+  grid-gap: 3rem;
+}
+
+.introDisclaimer {
+  font-family: headerfont;
+  font-size: 8rem;
+  line-height: 6rem;
+  color: var(--my-color2);
+  grid-area: intro-disclaimer;
+  text-align: left;
+}
+
+.introText {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  grid-area: intro-text;
+  text-align: left;
+}
+
+
+
+/*Landing Page Links*/
+
+.landingLinks {
+  margin-top: 10rem;
+  height: 30rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "landing1 landing2";
+  grid-gap: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.landingLink1 {
+  grid-area: landing1;
+  background-color: var(--my-color2);
+}
+
+.landingLink2 {
+  grid-area: landing2;
+  background-color: var(--my-color3);
+} 
+
+.landingLink1 a, .landingLink2 a {
+  text-decoration: none;
+  color: white;
+}
+
+.landingLinkHeader {
+  font-size: 6rem;
+  line-height:12rem;
+  padding-top: 6rem;
+  text-align: center;
+  font-family: headerfont;
+  color: whitesmoke;
+}
+
+.landingLink1:hover, .landingLink2:hover {
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  background-color: var(--my-color1);
+}
+
+
+
+/*Quote of Day*/
+
+.quoteBox {
+  height: auto;
+  font-size: 2rem;
+  line-height: 3rem; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quoteHeading, .quoteText, .quoteSub {
+  margin: 3rem;
+}
+
+.quoteHeading {
+  color: grey;
+  font-size: 4rem;
+}
+
+.quoteText, .quoteSub {
+  font-weight: bold;
+}
+
+
+/*Main Content for small Screen*/
+
+@media (max-width: 80rem) {
+
+.sloganImageContainer {
+  width: 100vw;
+  height: 60vh;
+}
+
+.sloganImage {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;  
+  object-position: center;
+}
+
+.sloganText {
+  color: var(--my-color3);
+  position: absolute;
+  top: 15vh;
+  left: 10vw;
+  width: 25rem;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+
+/*Main Text*/
+
+.intro {
+  padding: 2rem;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.introDisclaimer {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
+
+
+/*Landing Page Links*/
+
+.landingLinks {
+  margin: 1rem;
+}
+
+.landingLinkHeader {
+  font-size: 5rem;
+  line-height: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+}

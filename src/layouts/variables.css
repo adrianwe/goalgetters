@@ -1,0 +1,56 @@
+/* Color Scheme 1: Split Complement Blue-Orange
+:root {
+  --my-color1: #0f5e7f;
+  --my-color2: #81b6e3;
+  --my-color3: #ff9e50;
+}
+*/
+
+/* Color Scheme 2: Analogous Turquoise*/
+:root {
+  --my-color1: #3d445e;
+  --my-color2: #3b8e96;
+  --my-color3: #4eb4b0;
+}
+
+
+/* Color Scheme 3: Analogous Light Greens
+:root {
+  --my-color1: #4db5c8;
+  --my-color2: #86e6c8;
+  --my-color3: #d0eeab;
+}
+*/
+
+
+/* Color Scheme 4: Analogous Purple Blue
+:root {
+  --my-color1: #4c409a;
+  --my-color2: #3080b5;
+  --my-color3: #45a7c8;
+}
+*/ 
+
+/*Color Scheme 5: Split Complement Purple Orange
+:root {
+  --my-color1: #4c409a;
+  --my-color2: #45a7c8;
+  --my-color3: #f7c02d;
+}
+*/
+
+/*Color Scheme 6: Split Complement Blue Red
+:root {
+  --my-color1: #072c65;
+  --my-color2: #3e9ee0;
+  --my-color3: #ee6236;
+}
+*/
+
+/*Color Scheme 7: Split Complement Blue Red
+:root {
+  --my-color1: #3080b5;
+  --my-color2: #45a7c8;
+  --my-color3: #ffad64;
+}
+*/

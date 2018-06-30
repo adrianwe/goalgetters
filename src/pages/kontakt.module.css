@@ -1,0 +1,131 @@
+@import "../layouts/variables.css";
+
+/*Hero Image mit Slogan*/
+
+.sloganImageContainer {
+  width: 100vw;
+  max-width:100%;
+  height: 100vh;
+}
+
+.sloganImage {
+  width: 100vw;
+  max-width:100%;
+  height: 110vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.sloganText {
+  color: var(--my-color3);
+  position: absolute;
+  top: 35vh;
+  right: 10vw;
+  font-size: 10rem;
+  line-height: 9rem;
+  text-align: center;
+  font-family: headerfont;
+  display: none;
+  width: auto;
+}
+
+.sloganText:hover {
+  transition: color 0.5s ease;
+  color: var(--my-color3);
+  cursor: pointer;
+}
+
+/*Main Text*/
+
+.contactBody {
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 10rem;
+  height: auto;
+  display: block;
+}
+
+.contactHeader {
+  font-family: headerfont;
+  font-size: 8rem;
+  line-height: 6rem;
+  color: var(--my-color2);
+  text-align: left;
+}
+
+.contactText {
+  padding-top: 10rem;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+}
+
+.contactForm {
+  padding-top: 10rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.contactForm input {
+  width: 80vw;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contactForm input[name=email] {
+width: 80vw; /*Neu*/
+}
+
+.contactForm input[name=text] {
+width: 80vw;
+height: 20rem;
+}
+
+.contactForm input[type=submit] {
+background-color: var(--my-color3);
+color: white;
+width: 80vw;
+border: none;
+margin-top: 5rem;
+}
+
+.contactForm input[type=submit]:hover {
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  background-color: var(--my-color1);
+}
+
+
+/*Main Content for small Screen*/
+
+@media (max-width: 80rem) {
+
+.header {
+  background: none;
+}
+
+.sloganText {
+  display: none;
+}
+
+
+/*Main Text*/
+
+.intro {
+  padding: 2rem;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.introDisclaimer {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
+}
+

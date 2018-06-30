@@ -1,0 +1,185 @@
+@import "../layouts/variables.css";
+
+/*Main*/
+
+
+.main {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 30rem auto 30rem; 
+  grid-template-rows: 90vh auto auto auto;
+  grid-template-areas: "header header header"
+                      "left main right"
+                      "left tags right"
+                      "left back right"
+}
+
+
+.blogHeader { 
+  grid-area: header;
+  width: 100%;
+  height: 90vh;
+}
+
+
+.blogImage {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;  
+}
+
+.blogTitle {
+  width: 70%;
+  padding-top: 5rem;
+  height: 30%;
+  background-color: white;
+  opacity: 1;
+  font-family: headerfont;
+  font-size: 8rem;
+  line-height: 10rem;
+  color: var(--my-color1);
+  text-align: center;
+  grid-area: header;
+  position: absolute;
+  bottom: 5%;
+  left: 15%;
+}
+
+
+
+/*Main*/
+
+.mainText {
+  grid-area: main;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  text-align: left;
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+
+.mainText h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--my-color2);
+  line-height: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+.tags {
+  grid-area: tags;
+  text-align: left;
+}
+
+.tags p {
+  display: inline;
+  border-bottom: 4px solid var(--my-color2);
+  font-size: 2rem;
+  margin: 0.4rem;
+}
+
+.tags p:hover {
+  transition: background-color color 0.25s ease-in;
+  background-color: var(--my-color3);
+  color: white;
+}
+
+.backButton {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 30rem;
+  height: 3rem;
+  background: var(--my-color2);
+  grid-area: back;
+}
+
+.backButton a {
+  text-decoration: none;
+  color: white;
+}
+
+.backButton:hover {
+  background: var(--my-color1);
+  cursor: pointer;
+}
+
+
+
+/*Main Content for small Screen*/
+
+@media (max-width: 80rem) {
+
+/*Main*/
+
+.main {
+  display: grid;
+  grid-template-columns: 5vw 90vw 5vw; 
+  grid-template-rows: 90vh auto auto auto;
+}
+
+
+.blogImage {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;  
+}
+
+
+.blogTitle {
+  width: 100%;
+  height: auto;
+  padding-left: 3rem;
+  font-family: headerfont;
+  font-size: 4rem;
+  line-height: 6rem;
+  color: var(--my-color1);
+  text-align: left;
+  grid-area: header;
+  position: absolute;
+  top: 55vh;
+  left: 0;
+}
+
+
+/*Main*/
+
+.mainText {
+  grid-area: main;
+  padding: 0;
+  padding-top: 4rem;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.mainText h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: var(--my-color2);
+  line-height: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+.tags {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.tags p {
+  font-size: 1.5rem;
+  display: inline-block;
+}
+.backButton {
+  font-size: 1.5rem;
+  width: 90vw;
+}
+
+}
