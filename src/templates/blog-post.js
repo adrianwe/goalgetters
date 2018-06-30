@@ -7,7 +7,7 @@ export default ({ data }) => {
   const { title, tags, image, body } = data.contentfulBlogPost
 
   return (
-    <div className={styles.main}>
+    <div>
       <div className={styles.left}></div>
       <div className={styles.right}></div>
       <div className={styles.blogHeader}>

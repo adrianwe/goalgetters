@@ -6,7 +6,7 @@ export default ({ data }) => {
   const { headerImage } = data.contentfulPage
 
   return (
-    <div className={styles.main}>
+    <div>
       <div className={styles.slogan}>
         <div className={styles.sloganImageContainer}>
           <Img sizes={headerImage.sizes} className={styles.sloganImage} />

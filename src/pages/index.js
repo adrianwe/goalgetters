@@ -7,7 +7,7 @@ export default ({ data }) => {
   const { slogan, headerImage, landingIntros, landingLinks, quoteOfDay } = data.contentfulPage
 
   return (
-    <div className={styles.main}>
+    <div>
       <div className={styles.slogan}>
         <div className={styles.sloganImageContainer}>
           <Img sizes={headerImage.sizes} className={styles.sloganImage} />

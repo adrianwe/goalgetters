@@ -5,7 +5,7 @@ export default ({ data }) => {
   const { titel, text } = data.contentfulImpressum
 
   return (
-    <div className={styles.main}>
+    <div>
       <div className={styles.navBackground}></div>
       <div className={styles.impressum}>
         <div className={styles.impressumTitle}>{titel}</div>

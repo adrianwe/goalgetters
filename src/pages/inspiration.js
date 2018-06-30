@@ -44,7 +44,7 @@ export default class Inspiration extends Component {
 
   render() {  
     return(
-      <div className={styles.main}>
+      <div>
         <div className={styles.navBackground}></div>
         <div className={styles.pageTitle}>#Inspiration</div>
         {chunk(this.props.data.allContentfulBlogPost.edges.slice(0, this.state.postsToShow), 10).map((chunk, i) => (
