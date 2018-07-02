@@ -6,7 +6,7 @@ export default () => (
     <div className='landingNewsletter'>
       <div className='landingNewsletter__text'>Bleib auf dem Laufenden mit unserem wöchentlichen Newsletter:</div>
       <div className='landingNewsletter__form'>
-        <form method='post'>
+        <form name='contact' method='post' netlify action='/success'>
           <div className='email'>
             <input type='email' name='email' placeholder='Email' />
           </div>

@@ -7,6 +7,7 @@
     "gatsby": "^1.9.247",
     "gatsby-image": "^1.0.54",
     "gatsby-link": "^1.6.40",
+    "gatsby-plugin-netlify": "^1.0.21",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-sharp": "^1.6.48",
@@ -14,6 +15,7 @@
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
     "lodash.chunk": "^4.2.0",
+    "react-anchor-link-smooth-scroll": "^1.0.10",
     "react-helmet": "^5.2.0"
   },
   "keywords": [

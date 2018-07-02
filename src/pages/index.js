@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Img from 'gatsby-image'
 import styles from './index.module.css'
 
@@ -12,19 +13,21 @@ export default ({ data }) => {
         <div className={styles.sloganImageContainer}>
           <Img sizes={headerImage.sizes} className={styles.sloganImage} />
         </div>
-        <div className={styles.sloganText}>#{slogan}</div>
+        <AnchorLink href='#intros' className={styles.sloganText}>#{slogan}</AnchorLink>
       </div>
 
-      {landingIntros.map(intro => (
-        <div key={intro.landingIntroHeader} className={styles.intro}>
-          <div className={styles.introDisclaimer}>#{intro.landingIntroHeader}</div>
-          <div className={styles.introText} dangerouslySetInnerHTML={{ __html: intro.landingIntroText.childMarkdownRemark.html}}></div>
-        </div>
-      ))}
+      <div id='intros'>
+        {landingIntros.map(intro => (
+          <div key={intro.landingIntroHeader} className={styles.intro}>
+            <div className={styles.introDisclaimer}>#{intro.landingIntroHeader}</div>
+            <div className={styles.introText} dangerouslySetInnerHTML={{ __html: intro.landingIntroText.childMarkdownRemark.html}}></div>
+          </div>
+        ))}
+      </div>
 
       <div className={styles.landingLinks}>
         {landingLinks.map((link, index) => (
-          <div key={link.landingLinkHeader} className={index % 2 === 0 ? styles.landingLink2 : styles.landingLink1}>            
+          <div key={link.landingLinkHeader} className={index % 2 === 0 ? styles.landingLink2 : styles.landingLink1}>
             <Link to='/inspiration'>
               <div className={styles.landingLinkHeader}>#{link.landingLinkHeader}</div>
               <div>{link.landingLinkText} -></div>

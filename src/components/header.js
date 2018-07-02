@@ -26,10 +26,10 @@ class Nav extends Component {
               </li>
             ))}
           </ul>
-          <div className={`${type}Nav__search`}>
+          {/* <div className={`${type}Nav__search`}>
             <input type='text' placeholder='Suche...' />
             <input type='submit' value='Los!' />
-          </div>
+          </div> */}
         </nav>
         {type === 'mobile' && (
           <div className='hamburger' onClick={this.toggleHamburger}>

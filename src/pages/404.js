@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './404.module.css'
 
-const NotFoundPage = () => (
+export default () => (
   <div>
     <div className={styles.navBackground}></div>
     <div className={styles.box404}>
@@ -10,5 +10,3 @@ const NotFoundPage = () => (
     </div>
   </div>
 )
-
-export default NotFoundPage

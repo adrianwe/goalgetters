@@ -144,6 +144,7 @@ body {
   width: 100vw;
   background-color: var(--my-color1);
   display: none;
+  border-bottom: 6px solid var(--my-color3);
 }
 
 .mobileNav {
@@ -280,7 +281,7 @@ body {
 
 /*Main Content for small Screen*/
 
-@media (max-width: 80rem) {
+@media (max-width: 70rem) {
 
 .header {
   padding-left: 3rem;
