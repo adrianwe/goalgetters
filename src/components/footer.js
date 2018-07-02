@@ -6,7 +6,8 @@ export default () => (
     <div className='landingNewsletter'>
       <div className='landingNewsletter__text'>Bleib auf dem Laufenden mit unserem wöchentlichen Newsletter:</div>
       <div className='landingNewsletter__form'>
-        <form netlify name='contact' method='post'>
+        <form name='contact' method='post' data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field" />
           <div className='email'>
             <input type='email' name='email' placeholder='Email' />
           </div>
