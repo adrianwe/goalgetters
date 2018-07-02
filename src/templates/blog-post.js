@@ -20,9 +20,9 @@ export default ({ data }) => {
           <p key={tag.id}>#{tag.tag}</p>
         ))}
       </div>
-      <div className={styles.backButton}>
+      {/* <div className={styles.backButton}>
         <Link to='/inspiration'>zur Artikel Übersicht --></Link>
-      </div>
+      </div> */}
     </div>
   )
 }
