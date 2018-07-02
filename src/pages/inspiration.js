@@ -13,7 +13,7 @@ export default class Inspiration extends Component {
 
   constructor() {
     super()
-    postsToShow = typeof window !== 'undefined' ? window.postsToShow : this.postsChunk
+    const postsToShow = typeof window !== 'undefined' ? window.postsToShow : this.postsChunk
 
     this.state = {
       showingMore: postsToShow > this.postsChunk,
