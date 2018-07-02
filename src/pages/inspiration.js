@@ -4,12 +4,21 @@ import Img from 'gatsby-image'
 import chunk from 'lodash.chunk'
 import styles from './inspiration.module.css'
 
+if (typeof window !== 'undefined') {
+  window.postsToShow = 10
+}
+
 export default class Inspiration extends Component {
   postsChunk = 10
 
-  state = {
-    postsToShow: this.postsChunk,
-    showingMore: false
+  constructor() {
+    super()
+    const postsToShow = typeof window !== 'undefined' ? window.postsToShow : this.postsChunk
+
+    this.state = {
+      showingMore: postsToShow > this.postsChunk,
+      postsToShow
+    }
   }
 
   update() {
@@ -33,6 +42,7 @@ export default class Inspiration extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll)
+    window.postsToShow = this.state.postsToShow
   }
 
   handleShowMoreClick = () => {
