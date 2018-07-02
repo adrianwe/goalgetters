@@ -1,48 +1,30 @@
 @import "../layouts/variables.css";
 
-/*Main*/
-
-
-.main {
-  background-color: white;
-  display: grid;
-  grid-template-columns: 30rem auto 30rem; 
-  grid-template-rows: 90vh auto auto auto;
-  grid-template-areas: "header header header"
-                      "left main right"
-                      "left tags right"
-                      "left back right"
-}
-
-
-.blogHeader { 
-  grid-area: header;
-  width: 100%;
-  height: 90vh;
-}
+/*Header*/
 
 
 .blogImage {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   object-fit: cover;  
 }
 
-.blogTitle {
-  width: 70%;
-  padding-top: 5rem;
-  height: 30%;
+.blogContent {
+  height: auto;
+  margin-left: 15%;
+  margin-right: 15%;
   background-color: white;
   opacity: 1;
+}
+
+.blogTitle {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   font-family: headerfont;
-  font-size: 8rem;
-  line-height: 10rem;
+  font-size: 7rem;
+  line-height: 9rem;
   color: var(--my-color1);
-  text-align: center;
-  grid-area: header;
-  position: absolute;
-  bottom: 5%;
-  left: 15%;
+  text-align: left;
 }
 
 
@@ -50,12 +32,10 @@
 /*Main*/
 
 .mainText {
-  grid-area: main;
-  padding-top: 20rem;
   padding-bottom: 5rem;
   text-align: left;
   font-size: 2rem;
-  line-height: 3.5rem;
+  line-height: 4.5rem;
 }
 
 
@@ -68,14 +48,8 @@
   padding-bottom: 3rem;
 }
 
-
-.tags {
-  grid-area: tags;
-  text-align: left;
-}
-
 .tags p {
-  display: inline;
+  display: inline-block;
   border-bottom: 4px solid var(--my-color2);
   font-size: 2rem;
   margin: 0.4rem;
@@ -96,7 +70,6 @@
   width: 30rem;
   height: 3rem;
   background: var(--my-color2);
-  grid-area: back;
 }
 
 .backButton a {
@@ -115,71 +88,18 @@
 
 @media (max-width: 80rem) {
 
-/*Main*/
-
-.main {
-  display: grid;
-  grid-template-columns: 5vw 90vw 5vw; 
-  grid-template-rows: 90vh auto auto auto;
-}
-
-
-.blogImage {
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;  
-}
-
-
 .blogTitle {
-  width: 100%;
-  height: auto;
-  padding-left: 3rem;
-  font-family: headerfont;
   font-size: 4rem;
-  line-height: 6rem;
-  color: var(--my-color1);
-  text-align: left;
-  grid-area: header;
-  position: absolute;
-  top: 55vh;
-  left: 0;
+  line-height: 5rem;
 }
-
-
-/*Main*/
 
 .mainText {
-  grid-area: main;
-  padding: 0;
-  padding-top: 4rem;
-  text-align: left;
-  font-size: 1.5rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
+  line-height: 4rem;
 }
 
 .mainText h1 {
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: var(--my-color2);
-  line-height: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-
-.tags {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-
-.tags p {
-  font-size: 1.5rem;
-  display: inline-block;
-}
-.backButton {
-  font-size: 1.5rem;
-  width: 90vw;
+  font-size: 2rem;
 }
 
 }
