@@ -63,7 +63,7 @@ export default class Inspiration extends Component {
               const { id, slug, image, title, body, tags } = edge.node
               return (
                 <div key={id} className={styles.blogArticleListview__element}>
-                  <Link to={`/${slug}`}>
+                  <Link to={`/post/${slug}`}>
                     <div className={styles.blogPreviewContainer}>
                       <div className={styles.listviewBlogImageContainer}>
                         <Img sizes={image.sizes} className={styles.listviewBlogImage} />
