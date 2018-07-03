@@ -19,6 +19,12 @@ module.exports = {
     'gatsby-plugin-react-next',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-netlify',
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://space.us18.list-manage.com/subscribe/post?u=a7fc7d2ee180e911783c2c907&amp;id=071814cf2a'
+      }
+    }
   ]
 }

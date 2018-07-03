@@ -278,6 +278,18 @@ body {
   font-size: 2rem;
 }
 
+.mailChimpSuccess {
+  color: green;
+}
+
+.mailChimpError {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
 
 /*Main Content for small Screen*/
 
