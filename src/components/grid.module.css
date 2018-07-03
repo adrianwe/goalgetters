@@ -7,40 +7,52 @@
 
 .pageTitle {
   height: 50vh;
-  padding-top: 15rem;
+  padding-top: 18rem;
   font-family: headerfont;
   font-size: 10rem;
   line-height: 6rem;
   background: radial-gradient(circle at 50% 50%, var(--my-color2), var(--my-color1));
-  color: whitesmoke;
+  color: white;
   text-align: center;
 }
 
 .tagFilter {
-  padding: 5rem;
-  color: var(--my-color2);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
   font-size: 2rem;
   font-weight: bold;
-  line-height: 3rem;
+  line-height: 1rem;
+}
+
+.tagFilter a {
+  text-decoration: none;
+  padding: 1.5rem;
 }
 
 .tagFilter p {
+  text-decoration: none;
   display: inline-block;
   text-align: center;
-  margin: 2rem;
-  padding: 1rem;
+  color: var(--my-color1);
+  padding: 1.5rem;
+  border: 2px solid var(--my-color2);
+  border-radius: 12px;
 }
 
-.tagFilter p:hover .activeTag {
+.tagFilter p:hover {
   transition: background-color 0.25s ease-in;
   background-color: var(--my-color2);
   color: white;
   cursor: pointer;
 }
 
-.activeTag {
-  color: red;
+.activeTag p {
+  background-color: var(--my-color2);
+  color: white; 
 }
+
 
 
 /*Main Content Grid Alternative*/
@@ -202,27 +214,22 @@
 
 /*Main Content Flexbox for small Screen*/
 
-@media (max-width: 80rem) {
+@media (max-width: 70rem) {
 
 .navBackground {
-  background-color: var(--my-color1);
-  height: 10rem;
-  width: 100vw;
-  max-width:100%;
-}
-
-.header {
-  background: var(--my-color1);
+  display: none;
 }
 
 .pageTitle {
-  height: 40vh;
-  padding-top: 20vh;
-  font-family: headerfont;
-  font-size: 8rem;
-  line-height: 3rem;
-  background: white;
-  color: var(--my-color3);
+  height: 60vh;
+  padding-top: 30vh;
+  font-size: 6rem;
+}
+
+.tagFilter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 0.5rem;
 }
 
 .blogArticleListview {
@@ -277,8 +284,10 @@
 }
 
 .tags {
+  padding-top: 2rem;
+  color: white;
   font-size: 1.5rem;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 
 }
