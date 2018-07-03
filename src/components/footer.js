@@ -8,10 +8,12 @@ export default class Footer extends Component {
     result: null
   }
   
-  handleSubmit = async (e) => {
+  handleSubmit = e => {
     e.preventDefault()
-    const result = await addToMailchimp(this.state.email)
-    this.setState({ result })
+    addToMailchimp(this.state.email)
+      .then(result => {
+        this.setState({ result })
+      })
   }
 
   render() {
