@@ -31,11 +31,15 @@
   padding: 1rem;
 }
 
-.tagFilter p:hover {
+.tagFilter p:hover .activeTag {
   transition: background-color 0.25s ease-in;
   background-color: var(--my-color2);
   color: white;
   cursor: pointer;
+}
+
+.activeTag {
+  color: red;
 }
 
 

@@ -18,7 +18,9 @@ export default ({ data }) => {
         <div dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }} className={styles.mainText}></div>
         <div className={styles.tags}>
           {tags.map(tag => (
-            <p key={tag.id}>#{tag.tag}</p>
+            <Link to={`/tag/${tag.tag.toLowerCase()}`} key={tag.id}>
+              <p>#{tag.tag}</p>
+            </Link>
           ))}
         </div>
         {/* <div className={styles.backButton}>

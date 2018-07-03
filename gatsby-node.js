@@ -13,6 +13,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               }
             }
           }
+          allContentfulTag {
+            edges {
+              node {
+                tag
+              }
+            }
+          }
         }
       `).then(result => {
         if (result.errors) {
@@ -24,7 +31,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             path: `/post/${slug}`,
             component: path.resolve('./src/templates/blog-post.js'),
             context: {
-              slug: slug
+              slug
+            }
+          })
+        })
+        result.data.allContentfulTag.edges.forEach(edge => {
+          const { tag } = edge.node
+          createPage({
+            path: `/tag/${tag}`,
+            component: path.resolve('./src/templates/tag.js'),
+            context: {
+              tag
             }
           })
         })
