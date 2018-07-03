@@ -5,7 +5,6 @@
 
 .blogImage {
   width: 100%;
-  height: 100%;
   object-fit: cover;  
 }
 
@@ -21,8 +20,8 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   font-family: headerfont;
-  font-size: 7rem;
-  line-height: 9rem;
+  font-size: 6rem;
+  line-height: 8rem;
   color: var(--my-color1);
   text-align: left;
 }
@@ -34,8 +33,8 @@
 .mainText {
   padding-bottom: 5rem;
   text-align: left;
-  font-size: 2rem;
-  line-height: 4.5rem;
+  font-size: 1.8rem;
+  line-height: 4rem;
 }
 
 
@@ -46,6 +45,10 @@
   line-height: 5rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.tags {
+  margin-bottom: 10rem;
 }
 
 .tags p {
@@ -93,13 +96,7 @@
   line-height: 5rem;
 }
 
-.mainText {
-  font-size: 1.8rem;
-  line-height: 4rem;
-}
-
 .mainText h1 {
   font-size: 2rem;
 }
-
 }
