@@ -25,7 +25,7 @@ export default ({ data }) => {
               <label>Willst du dein Anliegen beschreiben?</label>
               <input type='text' name='text' placeholder='Mein Anliegen' />
             </div>
-            <div data-netlify-recaptcha></div>
+            <div data-netlify-recaptcha='true'></div>
             <input type='submit' value='Abschicken' />
           </form>
         </div>
