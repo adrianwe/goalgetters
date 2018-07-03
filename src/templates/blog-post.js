@@ -13,16 +13,18 @@ export default ({ data }) => {
       <div className={styles.blogHeader}>
         <Img sizes={image.sizes} className={styles.blogImage} />
       </div>
-      <div className={styles.blogTitle}>#{title}</div>
-      <div dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }} className={styles.mainText}></div>
-      <div className={styles.tags}>
-        {tags.map(tag => (
-          <p key={tag.id}>#{tag.tag}</p>
-        ))}
+      <div className={styles.blogContent}>
+        <div className={styles.blogTitle}>#{title}</div>
+        <div dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }} className={styles.mainText}></div>
+        <div className={styles.tags}>
+          {tags.map(tag => (
+            <p key={tag.id}>#{tag.tag}</p>
+          ))}
+        </div>
+        {/* <div className={styles.backButton}>
+          <Link to='/inspiration'>zur Artikel Übersicht --></Link>
+        </div> */}
       </div>
-      {/* <div className={styles.backButton}>
-        <Link to='/inspiration'>zur Artikel Übersicht --></Link>
-      </div> */}
     </div>
   )
 }

@@ -57,6 +57,22 @@ export default class Inspiration extends Component {
       <div>
         <div className={styles.navBackground}></div>
         <div className={styles.pageTitle}>#Inspiration</div>
+        <div className={styles.tagFilter}>
+          <p>#Inspiration</p>
+          <p>#Motivation</p>
+          <p>#Ungewissheit</p>
+          <p>#Lebensplanung</p>
+          <p>#Werte</p>
+          <p>#Konzept</p>
+          <p>#Motivation</p>
+          <p>#Ungewissheit</p>
+          <p>#Lebensplanung</p>
+          <p>#Werte</p>
+          <p>#Inspiration</p>
+          <p>#Motivation</p>
+          <p>#Ungewissheit</p>
+          <p>#Lebensplanung</p>
+        </div>
         {chunk(this.props.data.allContentfulBlogPost.edges.slice(0, this.state.postsToShow), 10).map((chunk, i) => (
           <div key={i} className={styles.blogArticleListview}>
             {chunk.map(edge => {
