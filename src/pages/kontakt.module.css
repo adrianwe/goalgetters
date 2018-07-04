@@ -98,6 +98,10 @@ margin-top: 5rem;
   background-color: var(--my-color1);
 }
 
+.formField {
+  display: none;
+}
+
 
 /*Main Content for small Screen*/
 
