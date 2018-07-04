@@ -25,17 +25,20 @@ export default class Kontakt extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state
+
+    if (this.state['g-recaptcha-response']) {
+      const form = e.target
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...this.state
+        })
       })
-    })
-      .then(() => navigateTo(form.getAttribute('action')))
-      .catch(error => alert(error))
+        .then(() => navigateTo(form.getAttribute('action')))
+        .catch(error => alert(error))
+    }
   }
 
   render() {
@@ -62,7 +65,7 @@ export default class Kontakt extends Component {
               </div>
               <div>
                 <label>Willst du dein Anliegen beschreiben?</label>
-                <input type='text' name='text' placeholder='Mein Anliegen' onChange={this.handleChange} />
+                <input required type='text' name='text' placeholder='Mein Anliegen' onChange={this.handleChange} />
               </div>
               <Recaptcha
                 ref='recaptcha'
