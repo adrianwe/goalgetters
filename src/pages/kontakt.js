@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import Recaptcha from 'react-google-recaptcha'
-import styles from './kontakt.module.css'
-
-// recaptchaKey import statement is for dev only
+// recaptchaKey import statement is for dev only, prod env var is loaded in the component
 import { recaptchaKey } from '../../keys/keys'
-// this is for prod
-if (!recaptchaKey) {
-  const recaptchaKey = process.env.GATSBY_SITE_RECAPTCHA_KEY
-}
+import styles from './kontakt.module.css'
 
 function encode(data) {
   return Object.keys(data)
@@ -70,7 +65,7 @@ export default class Kontakt extends Component {
               </div>
               <Recaptcha
                 ref='recaptcha'
-                sitekey={recaptchaKey}
+                sitekey={recaptchaKey || process.env.GATSBY_SITE_RECAPTCHA_KEY}
                 onChange={this.handleRecaptcha}
               />
               <input type='submit' value='Abschicken' />
