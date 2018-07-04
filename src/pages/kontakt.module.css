@@ -90,6 +90,7 @@ color: white;
 width: 80vw;
 border: none;
 margin-top: 5rem;
+border-radius: 12px;
 }
 
 .contactForm input[type=submit]:hover {

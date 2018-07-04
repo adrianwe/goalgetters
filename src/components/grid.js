@@ -65,12 +65,13 @@ export default class Inspiration extends Component {
               <p>#{node.tag}</p>
             </Link>
           ))}
+          {this.props.type === 'tag' && (
+                    <Link to={'/inspiration'}>
+              <p className={styles.allTopics} >alles anzeigen</p>
+                    </Link>
+                  )}
         </div>
-        {this.props.type === 'tag' && (
-          <Link to={'/inspiration'}>
-            <p>show all posts [X]</p>
-          </Link>
-        )}
+        
         {chunk(this.props.data.allContentfulBlogPost.edges.slice(0, this.state.postsToShow), 10).map((chunk, i) => (
           <div key={i} className={styles.blogArticleListview}>
             {chunk.map(edge => {

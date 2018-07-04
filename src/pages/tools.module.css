@@ -18,10 +18,10 @@
 
 .sloganText {
   color: white;
-  width: 100vw;
-  max-width:100%;
+  width: 100%;
+  padding: 10%;
   position: absolute;
-  top: 60vh;
+  top: 30vh;
   font-size: 8rem;
   line-height: 9rem;
   text-align: center;

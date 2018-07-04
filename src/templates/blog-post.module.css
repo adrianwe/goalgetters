@@ -51,6 +51,11 @@
   margin-bottom: 10rem;
 }
 
+.tags a {
+  text-decoration: none;
+  color: var(--my-color1);
+}
+
 .tags p {
   display: inline-block;
   border-bottom: 4px solid var(--my-color2);

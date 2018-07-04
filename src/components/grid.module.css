@@ -41,6 +41,18 @@
   border-radius: 12px;
 }
 
+
+.tagFilter .allTopics {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background-color: var(--my-color1);
+  padding: 1.5rem;
+  border: 2px solid var(--my-color1);
+  border-radius: 12px;
+}
+
 .tagFilter p:hover {
   transition: background-color 0.25s ease-in;
   background-color: var(--my-color2);

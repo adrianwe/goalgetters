@@ -43,7 +43,7 @@ export default class Footer extends Component {
                 <Link to='/'>Home</Link>
               </li>
               <li className='mainFooter__link'>
-                <Link to='/impressum'>Impressum</Link>
+                <Link to='/impressum'>Impressum/Datenschutz</Link>
               </li>
             </ul>
           </nav>

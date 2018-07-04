@@ -228,6 +228,7 @@ body {
   height: 3rem;
   font-size: 2rem;
   margin-bottom: 3rem;
+  border-radius: 12px;
 }
 
 .landingNewsletter__form input[type=submit] {
@@ -287,20 +288,16 @@ body {
   font-size: 2rem;
 }
 
-.mailChimpSuccess {
+.mailChimpSuccess, .mailChimpError {
   color: whitesmoke;
-  background-color: var(--my-color2);
+  background-color: grey;
   font-size: 2rem;
-  padding: 2rem;
+  padding: 5vw;
   margin-bottom: 5rem;
 }
 
 .mailChimpError {
-  color: whitesmoke;
   background-color: coral;
-  font-size: 2rem;
-  padding: 2rem;
-  margin-bottom: 5rem;
 }
 
 
