@@ -2,7 +2,7 @@ import React from 'react'
 import Grid from '../components/grid'
 
 export default ({ data, pathContext }) => (
-  <Grid data={data} tag={pathContext.tag.toLowerCase()} />
+  <Grid type='tag' data={data} tag={pathContext.tag.toLowerCase()} />
 )
 
 export const query = graphql`
