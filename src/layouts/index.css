@@ -248,6 +248,15 @@ body {
   margin-bottom: 3rem;
 }
 
+.impressumText a {
+  text-decoration: none;
+  color: white;
+}
+
+.impressumText a:hover {
+  color: var(--my-color3);
+}
+
 
 /*Footer*/
 
@@ -279,11 +288,19 @@ body {
 }
 
 .mailChimpSuccess {
-  color: green;
+  color: whitesmoke;
+  background-color: var(--my-color2);
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
 }
 
 .mailChimpError {
-  color: red;
+  color: whitesmoke;
+  background-color: coral;
+  font-size: 2rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
 }
 
 

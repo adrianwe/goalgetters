@@ -75,7 +75,7 @@ export default class Kontakt extends Component {
               <input type='submit' value='Abschicken' />
             </form>
           </div>
-          <div className='impressumText'>Mit deiner Kontaktaufnahme erklärst du dich mit unseren Datenschutzbedingungen und AGB einverstanden.</div>
+          <div className='impressumText'>Mit deiner Kontaktaufnahme erklärst du dich mit unseren Datenschutzbedingungen einverstanden.</div>
         </div>
       </div>
     )

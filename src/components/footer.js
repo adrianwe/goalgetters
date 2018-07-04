@@ -34,7 +34,7 @@ export default class Footer extends Component {
           {this.state.result && (
             <div className={this.state.result.result === 'success' ? 'mailChimpSuccess' : 'mailChimpError'} dangerouslySetInnerHTML={{ __html: this.state.result.msg }}></div>
           )}
-          <div className='impressumText'>Mit deiner Anmeldung erklärst du dich mit unseren Datenschutzbedingungen und AGB einverstanden.</div>
+          <div className='impressumText'>Mit deiner Anmeldung erklärst du dich mit unseren <Link to='/impressum'>Datenschutzbedingungen </Link> einverstanden.</div>
         </div>
         <div className='mainFooter'>
           <nav className='mainFooter__nav'>
