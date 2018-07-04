@@ -1,5 +1,5 @@
 module.exports = {
   spaceId: process.env.CF_SPACE,
   accessToken: process.env.CF_TOKEN,
-  recaptchaKey: process.env.SITE_RECAPTCHA_KEY
+  recaptchaKey: process.env.GATSBY_SITE_RECAPTCHA_KEY
 }
