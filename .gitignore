@@ -3,6 +3,7 @@
 node_modules
 yarn-error.log
 keys_dev.js
+.env.development
 
 # Build directory
 /public

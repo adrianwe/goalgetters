@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
 import Recaptcha from 'react-google-recaptcha'
-import { recaptchaKey } from '../../keys/keys'
 import styles from './kontakt.module.css'
+
+// recaptchaKey import statement is for dev only
+import { recaptchaKey } from '../../keys/keys'
+// this is for prod
+if (!recaptchaKey) {
+  const recaptchaKey = process.env.GATSBY_SITE_RECAPTCHA_KEY
+}
 
 function encode(data) {
   return Object.keys(data)
