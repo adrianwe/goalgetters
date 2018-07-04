@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Img from 'gatsby-image'
+import { navigateTo } from 'gatsby-link'
 import Recaptcha from 'react-google-recaptcha'
 // recaptchaKey import statement is for dev only, prod env var is loaded in the component
 import { recaptchaKey } from '../../keys/keys'
