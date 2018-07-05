@@ -61,17 +61,19 @@
 }
 
 .contactForm input[name=email] {
-  height: 3rem;
+  height: 3.5rem;
+  padding: 1rem;
 }
 
 .contactForm input[name=text] {
   height: 15rem;
+  padding: 1rem;
 }
 
 .contactForm input[type=submit] {
   background-color: var(--my-color2);
   color: white;
-  height: 3rem;
+  height: 3.5rem;
   border: none;
   margin-top: 3rem;
 }

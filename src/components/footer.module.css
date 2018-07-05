@@ -29,9 +29,10 @@
 
 .landingNewsletter__form input {
   width: 35rem;
-  height: 3rem;
+  height: 3.5rem;
   font-size: 2rem;
   margin-bottom: 3rem;
+  padding-left: 1rem;
 }
 
 .landingNewsletter__form input[type=submit] {

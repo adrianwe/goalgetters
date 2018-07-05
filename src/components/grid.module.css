@@ -249,17 +249,25 @@
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tagFilter a {
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 .blogArticleListview {
   display: flex;
   flex-flow: column; 
   flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
 }
 
 .blogArticleListview__element {
-  margin-top: 1rem;
-  width: 95vw;
+  margin-top: 1vw;
+  width: 98vw;
   height: 40vh;
   overflow: hidden;
   position: relative;
@@ -271,12 +279,12 @@
 }
 
 .listviewBlogImageContainer {
-  width: 95vw;
+  width: 98vw;
   height: 40vh;
 }
 
 .listviewBlogImage {
-  width: 95vw;
+  width: 98vw;
   height: 40vh;
   object-fit: cover;  
   filter: brightness(40%);

@@ -3,8 +3,8 @@ const keys = require('./keys/keys')
 module.exports = {
   siteMetadata: {
     title: 'goalgetters!',
-    description: '',
-    keywords: ''
+    description: 'Finde deine Berufung, starte eine neue Karriere oder gründe dein eigenes Unternehmen. goalgetters! unterstützt dich bei deinem beruflichen Neustart!',
+    keywords: 'Beruf, Karriere, Lebensplanung, Neuorientierung, Bildung'
   },
   plugins: [
     {
