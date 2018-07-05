@@ -19,7 +19,6 @@
   margin-top: 3rem;
   margin-bottom: 3rem;
   line-height: 3rem;
-  font-weight: bold;
 }
 
 .landingNewsletter__form {
@@ -86,9 +85,9 @@
 .mainFooter__link a {
   text-decoration: none;
   list-style: none;
-  color: whitesmoke;
+  color: lightgray;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .mailChimpSuccess, .mailChimpError {

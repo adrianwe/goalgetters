@@ -55,6 +55,7 @@
   color: var(--my-color2);
   grid-area: intro-disclaimer;
   text-align: left;
+  padding-top: 3rem;
 }
 
 .introText {
