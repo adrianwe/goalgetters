@@ -61,17 +61,21 @@ export default class Inspiration extends Component {
         <div className={styles.pageTitle}>#Inspiration</div>
         <div className={styles.tagFilter}>
           {this.props.data.allContentfulTag.edges.map(({ node }) => (
-            <Link to={`/tag/${node.tag.toLowerCase()}`} key={node.id} className={this.props.tag === node.tag.toLowerCase() ? styles.activeTag : undefined}>
-              <p>#{node.tag}</p>
-            </Link>
+            this.props.tag === node.tag.toLowerCase()
+              ? <Link to={'/inspiration'} key={node.id} className={styles.activeTag}>
+                  <p>#{node.tag}</p>
+                </Link>
+              : <Link to={`/tag/${node.tag.toLowerCase()}`} key={node.id}>
+                  <p>#{node.tag}</p>
+                </Link>
           ))}
           {this.props.type === 'tag' && (
-                    <Link to={'/inspiration'}>
+            <Link to={'/inspiration'}>
               <p className={styles.allTopics} >alles anzeigen</p>
-                    </Link>
-                  )}
+            </Link>
+          )}
         </div>
-        
+
         {chunk(this.props.data.allContentfulBlogPost.edges.slice(0, this.state.postsToShow), 10).map((chunk, i) => (
           <div key={i} className={styles.blogArticleListview}>
             {chunk.map(edge => {
