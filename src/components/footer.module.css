@@ -1,0 +1,125 @@
+@import "../layouts/variables.css";
+
+/*Newsletter*/
+
+.landingNewsletter {
+  padding: 3rem;;
+  height: auto;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--my-color1);
+  color: white;
+  text-align: center;
+}
+
+.landingNewsletter__text {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  line-height: 3rem;
+  font-weight: bold;
+}
+
+.landingNewsletter__form {
+  font-weight: bold;
+  margin: 1rem;
+  margin-bottom: 3rem;
+}
+
+.landingNewsletter__form input {
+  width: 35rem;
+  height: 3rem;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.landingNewsletter__form input[type=submit] {
+  background-color: var(--my-color2);
+  color: white;
+  border: none;
+}
+
+.landingNewsletter__form input[type=submit]:hover {
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  background-color: var(--my-color3);
+}
+
+.impressumText {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.impressumText a {
+  text-decoration: none;
+  color: white;
+}
+
+.impressumText a:hover {
+  color: var(--my-color3);
+}
+
+
+/*Footer*/
+
+.mainFooter {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  bottom: 0;
+}
+ 
+.mainFooter__links {
+  text-decoration: none;
+  list-style: none;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+.mainFooter__link a {
+  text-decoration: none;
+  list-style: none;
+  color: whitesmoke;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.mailChimpSuccess, .mailChimpError {
+  color: white;
+  max-width: 90rem;
+  background-color: rgba(0, 0, 0, 0.219);
+  opacity: 0.9;
+  font-size: 2rem;
+  line-height: 5rem;
+  padding: 3vw;
+  margin-bottom: 5rem;
+}
+
+.mailChimpError {
+  background-color: coral;
+}
+
+
+/*Main Content for small Screen*/
+
+@media (max-width: 70rem) {
+
+.landingNewsletter {
+  height: auto;
+}
+
+.landingNewsletter__form input {
+    width: 25rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+}

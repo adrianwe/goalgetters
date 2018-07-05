@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Link from 'gatsby-link'
+import styles from './header.module.css'
 
 class Nav extends Component {
   state = {
@@ -18,24 +19,24 @@ class Nav extends Component {
 
     return (
       <Fragment>
-        <nav className={`${type}Nav`} style={{ display: type === 'mobile' && display }}>
-          <ul className={`${type}Nav__items`}>
+        <nav className={styles[`${type}Nav`]} style={{ display: type === 'mobile' && display }}>
+          <ul className={styles[`${type}Nav__items`]}>
             {navigation.map(navItem => (
-              <li key={`${type}_${navItem.linkSlug}`} className={`${type}Nav__item`}>
+              <li key={`${type}_${navItem.linkSlug}`} className={styles[`${type}Nav__item`]}>
                 <Link to={`/${navItem.linkSlug}`}>{navItem.linkName}</Link>
               </li>
             ))}
           </ul>
-          {/* <div className={`${type}Nav__search`}>
+          {/* <div className={styles[`${type}Nav__search`]}>
             <input type='text' placeholder='Suche...' />
             <input type='submit' value='Los!' />
           </div> */}
         </nav>
         {type === 'mobile' && (
-          <div className='hamburger' onClick={this.toggleHamburger}>
-            <div className='bar1'></div>
-            <div className='bar2'></div>
-            <div className='bar3'></div>
+          <div className={styles.hamburger} onClick={this.toggleHamburger}>
+            <div className={styles.bar1}></div>
+            <div className={styles.bar2}></div>
+            <div className={styles.bar3}></div>
           </div>
         )}
       </Fragment>
@@ -44,8 +45,8 @@ class Nav extends Component {
 }
 
 export default ({ title, navigation }) => (
-  <div className='header'>
-    <div className='title'>
+  <div className={styles.header}>
+    <div className={styles.title}>
       <Link to='/'>{title}</Link>
     </div>
     <Nav type='main' navigation={navigation} />
