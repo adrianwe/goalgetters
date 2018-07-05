@@ -4,13 +4,10 @@
 
 .sloganImageContainer {
   width: 100%;
-  max-width:100%;
 }
 
 .sloganImage {
-  width: 100vw;
-  max-width:100%;
-  height: 110vh;
+  width: 100%;
   object-fit: cover;
   object-position: top;
 }
@@ -37,32 +34,21 @@
 /*Main Text*/
 
 .contactBody {
-  padding-top: 10rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 10rem;
   height: auto;
   display: block;
+  padding: 10rem;
 }
 
 .contactHeader {
-  padding-top: 5rem;
   font-family: headerfont;
-  font-size: 8rem;
-  line-height: 6rem;
+  font-size: 6rem;
   color: var(--my-color2);
   text-align: left;
-}
-
-.contactText {
-  padding-top: 10rem;
-  font-size: 2rem;
-  line-height: 3rem;
-  text-align: left;
+  padding-bottom: 10rem;
 }
 
 .contactForm {
-  padding-top: 10rem;
+  padding-top: 2rem;
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
@@ -71,26 +57,23 @@
 .contactForm input {
   width: 80vw;
   font-size: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .contactForm input[name=email] {
-  width: 80vw; /*Neu*/
+  height: 3rem;
 }
 
 .contactForm input[name=text] {
-  width: 80vw;
-  height: 20rem;
+  height: 15rem;
 }
 
 .contactForm input[type=submit] {
   background-color: var(--my-color2);
   color: white;
-  width: 20rem;
-  height: 4rem;
+  height: 3rem;
   border: none;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .contactForm input[type=submit]:hover {
@@ -137,6 +120,47 @@
   margin-bottom: 3rem;
   margin-top: 2rem;
   font-size: 5rem;
+}
+
+
+.contactBody {
+  height: auto;
+  display: block;
+  width: 100%;
+  padding: 2rem;
+}
+
+.contactHeader {
+  padding-top: 3rem;
+  font-size: 4rem;
+  padding-bottom: 3rem;
+}
+
+.contactForm {
+  width: 90%;
+}
+
+.contactForm input {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  border: 1px solid grey;
+}
+
+.contactForm input[name=email] {
+  height: 2rem;
+}
+
+.contactForm input[name=text] {
+  height: 10rem;
+}
+
+.contactForm input[type=submit] {
+  background-color: var(--my-color2);
+  color: white;
+  height: 3rem;
+  border: none;
+  margin-top: 3rem;
 }
 
 }
