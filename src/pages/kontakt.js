@@ -60,11 +60,11 @@ export default class Kontakt extends Component {
                 <p>This form won’t work with Javascript disabled</p>
               </noscript>
               <div>
-                <label>Sag mir deine Email-Adresse, wenn du eine Antwort erhalten willst</label>
+                <label>Sag uns deine Email-Adresse, wenn du eine Antwort erhalten willst</label>
                 <input type='text' name='email' placeholder='Email' onChange={this.handleChange} />
               </div>
               <div>
-                <label>Willst du dein Anliegen beschreiben?</label>
+                <label>Beschreibe hier dein Anliegen:</label>
                 <input required type='text' name='text' placeholder='Mein Anliegen' onChange={this.handleChange} />
               </div>
               <Recaptcha
@@ -75,7 +75,6 @@ export default class Kontakt extends Component {
               <input type='submit' value='Abschicken' />
             </form>
           </div>
-          <div className='impressumText'>Mit deiner Kontaktaufnahme erklärst du dich mit unseren Datenschutzbedingungen einverstanden.</div>
         </div>
       </div>
     )

@@ -41,7 +41,6 @@
   padding-top: 10rem;
   padding-left: 15rem;
   padding-right: 15rem;
-  padding-bottom: 5rem;
   height: auto;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -56,12 +55,11 @@
   color: var(--my-color2);
   grid-area: intro-disclaimer;
   text-align: left;
-  padding-top: 3rem;
 }
 
 .introText {
   font-size: 1.8rem;
-  line-height: 3rem;
+  line-height: 4rem;
   grid-area: intro-text;
   text-align: left;
 }
@@ -85,11 +83,13 @@
 
 .landingLink1 {
   grid-area: landing1;
+  padding-top: 5rem;
   background-color: var(--my-color2);
 }
 
 .landingLink2 {
   grid-area: landing2;
+  padding-top: 5rem;
   background-color: var(--my-color3);
 } 
 
@@ -188,8 +188,8 @@
 
 .introDisclaimer {
   margin-bottom: 3rem;
-  margin-top: 2rem;
-  font-size: 5rem;
+  font-size: 4rem;
+  padding-top: 2rem;
 }
 
 .introText {
@@ -207,6 +207,9 @@
 
 .landingLink1, .landingLink2 {
   height: 25rem;
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .landingLinkHeader {

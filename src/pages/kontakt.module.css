@@ -47,6 +47,7 @@
 }
 
 .contactHeader {
+  padding-top: 5rem;
   font-family: headerfont;
   font-size: 8rem;
   line-height: 6rem;
@@ -76,21 +77,21 @@
 }
 
 .contactForm input[name=email] {
-width: 80vw; /*Neu*/
+  width: 80vw; /*Neu*/
 }
 
 .contactForm input[name=text] {
-width: 80vw;
-height: 20rem;
+  width: 80vw;
+  height: 20rem;
 }
 
 .contactForm input[type=submit] {
-background-color: var(--my-color3);
-color: white;
-width: 80vw;
-border: none;
-margin-top: 5rem;
-border-radius: 12px;
+  background-color: var(--my-color2);
+  color: white;
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  margin-top: 5rem;
 }
 
 .contactForm input[type=submit]:hover {
@@ -102,6 +103,13 @@ border-radius: 12px;
 .formField {
   display: none;
 }
+
+.kontaktimpressumText {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 
 
 /*Main Content for small Screen*/
