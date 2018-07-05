@@ -214,6 +214,7 @@ body {
 .landingNewsletter__text {
   margin-top: 3rem;
   margin-bottom: 3rem;
+  line-height: 3rem;
   font-weight: bold;
 }
 
@@ -231,16 +232,15 @@ body {
 }
 
 .landingNewsletter__form input[type=submit] {
-  background-color: var(--my-color3);
+  background-color: var(--my-color2);
   color: white;
-  width: 12rem;
   border: none;
 }
 
 .landingNewsletter__form input[type=submit]:hover {
   cursor: pointer;
   transition: background-color 0.5s ease;
-  background-color: var(--my-color2);
+  background-color: var(--my-color3);
 }
 
 .impressumText {

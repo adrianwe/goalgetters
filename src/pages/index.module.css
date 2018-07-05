@@ -117,10 +117,10 @@
 /*Quote of Day*/
 
 .quoteBox {
-  padding: 3rem;
+  padding: 5rem;
   height: auto;
   font-size: 2rem;
-  line-height: 3rem; 
+  line-height: 4rem; 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@
 }
 
 .quoteHeading, .quoteText, .quoteSub {
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .quoteText {
@@ -223,6 +223,8 @@
 
 .quoteBox {
   padding: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .quoteHeading, .quoteText, .quoteSub {
