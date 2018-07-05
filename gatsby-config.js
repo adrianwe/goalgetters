@@ -28,8 +28,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    {
-      resolve: 'gatsby-plugin-sitemap'
-    }
+    'gatsby-plugin-remove-trailing-slashes',
+    'gatsby-plugin-sitemap'
   ]
 }
