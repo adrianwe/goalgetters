@@ -38,7 +38,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         result.data.allContentfulTag.edges.forEach(edge => {
           const { tag } = edge.node
           createPage({
-            path: `/tag/${tag}`,
+            path: `/tag/${tag.toLowerCase()}`,
             component: path.resolve('./src/templates/tag.js'),
             context: {
               tag
