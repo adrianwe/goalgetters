@@ -231,7 +231,7 @@
 
 /*Main Content Flexbox for small Screen*/
 
-@media (max-width: 70rem) {
+@media (max-width: 60rem) {
 
 .navBackground {
   display: none;
@@ -260,12 +260,12 @@
   flex-flow: column; 
   flex-wrap: wrap;
   align-items: center;
-  margin: 0;
+  margin: 1%;
 }
 
 .blogArticleListview__element {
   margin-top: 1%;
-  width: 98%;
+  width: 100%;
   height: 40vh;
   overflow: hidden;
   position: relative;
@@ -277,12 +277,12 @@
 }
 
 .listviewBlogImageContainer {
-  width: 98%;
+  width: 100%;
   height: 40vh;
 }
 
 .listviewBlogImage {
-  width: 98%;
+  width: 100%;
   height: 40vh;
   object-fit: cover;  
   filter: brightness(40%);
