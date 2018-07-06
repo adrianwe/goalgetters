@@ -60,7 +60,7 @@ export default class Kontakt extends Component {
                 <p>This form won’t work with Javascript disabled</p>
               </noscript>
               <div>
-                <input type='text' name='email' placeholder='Email für Rückantwort (optional)' onChange={this.handleChange} />
+                <input type='text' name='email' placeholder='Email (optional)' onChange={this.handleChange} />
               </div>
               <div>
                 <input required type='text' name='text' placeholder='Mein Anliegen' onChange={this.handleChange} />
