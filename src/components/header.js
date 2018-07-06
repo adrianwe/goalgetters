@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Link from 'gatsby-link'
-import FaIcon from 'react-icons/lib/fa/close'
+import { FaClose, FaBars } from 'react-icons/lib/fa'
 import styles from './header.module.css'
 
 class Nav extends Component {
@@ -36,12 +36,10 @@ class Nav extends Component {
         {type === 'mobile' && (
           display === 'none'
             ? <div className={styles.hamburger} onClick={this.toggleMobileNav}>
-                <div className={styles.bar1}></div>
-                <div className={styles.bar2}></div>
-                <div className={styles.bar3}></div>
+                <FaBars />
               </div>
             : <div className={styles.cross} onClick={this.toggleMobileNav}>
-              <FaIcon />
+              <FaClose />
             </div>
         )}
       </Fragment>
