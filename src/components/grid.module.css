@@ -16,8 +16,8 @@
 .tagFilter {
   padding-top: 3vh;
   padding-bottom: 3vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 2%;
+  padding-right: 2%;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1rem;
@@ -37,7 +37,6 @@
   border: 2px solid var(--my-color2);
   border-radius: 12px;
 }
-
 
 .tagFilter .allTopics {
   text-decoration: none;
@@ -64,7 +63,6 @@
   cursor: pointer;
 }
 
-
 .activeTag p {
   background-color: var(--my-color2);
   color: white; 
@@ -78,8 +76,8 @@
   margin: 1rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 50%;
-  grid-template-rows: 23rem 23rem 23rem 23rem 23rem 23rem 23rem 23rem ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 23rem 23rem 23rem 23rem 23rem 23rem 23rem 23rem;
   grid-template-areas: "article-1 article-2" 
                        "article-1 article-4" 
                        "article-3 article-4" 
@@ -266,8 +264,8 @@
 }
 
 .blogArticleListview__element {
-  margin-top: 1vw;
-  width: 98vw;
+  margin-top: 1%;
+  width: 98%;
   height: 40vh;
   overflow: hidden;
   position: relative;
@@ -279,12 +277,12 @@
 }
 
 .listviewBlogImageContainer {
-  width: 98vw;
+  width: 98%;
   height: 40vh;
 }
 
 .listviewBlogImage {
-  width: 98vw;
+  width: 98%;
   height: 40vh;
   object-fit: cover;  
   filter: brightness(40%);

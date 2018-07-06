@@ -16,7 +16,7 @@
   color: var(--my-color3);
   position: absolute;
   top: 35vh;
-  right: 10vw;
+  right: 10%;
   font-size: 10rem;
   line-height: 9rem;
   text-align: center;
@@ -36,7 +36,7 @@
 .contactBody {
   height: auto;
   display: block;
-  padding: 10vw;
+  padding: 10%;
 }
 
 .contactHeader {
@@ -44,7 +44,7 @@
   font-size: 6rem;
   color: var(--my-color2);
   text-align: left;
-  padding-bottom: 10rem;
+  padding-bottom: 5%;
 }
 
 .contactForm {
@@ -55,7 +55,7 @@
 }
 
 .contactForm input {
-  width: 80vw;
+  width: 100%;
   font-size: 2rem;
   margin-bottom: 5rem;
 }
@@ -111,30 +111,6 @@
   display: block;
 }
 
-.introDisclaimer {
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-  font-size: 5rem;
-}
-
-
-.contactBody {
-  height: auto;
-  display: block;
-  width: 100%;
-  padding: 2rem;
-}
-
-.contactHeader {
-  padding-top: 3rem;
-  font-size: 4rem;
-  padding-bottom: 3rem;
-}
-
-.contactForm {
-  width: 90%;
-}
-
 .contactForm input {
   width: 100%;
   font-size: 1.5rem;
@@ -143,7 +119,7 @@
 }
 
 .contactForm input[name=email] {
-  height: 2rem;
+  height: 3rem;
 }
 
 .contactForm input[name=text] {

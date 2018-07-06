@@ -3,7 +3,7 @@
 .navBackground {
   background-color: var(--my-color1);
   height: 10rem;
-  width: 100vw;
+  width: 100%;
   max-width:100%;
 }
 
