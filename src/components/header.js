@@ -7,7 +7,7 @@ class Nav extends Component {
     display: 'none'
   }
 
-  toggleHamburger = () => {
+  toggleMobileNav = () => {
     this.setState((prevState) => ({
       display: prevState.display === 'none' ? 'block' : 'none'
     }))
@@ -23,7 +23,7 @@ class Nav extends Component {
           <ul className={styles[`${type}Nav__items`]}>
             {navigation.map(navItem => (
               <li key={`${type}_${navItem.linkSlug}`} className={styles[`${type}Nav__item`]}>
-                <Link to={`/${navItem.linkSlug}`}>{navItem.linkName}</Link>
+                <Link to={`/${navItem.linkSlug}`} onClick={() => this.setState({ display: 'none'})}>{navItem.linkName}</Link>
               </li>
             ))}
           </ul>
@@ -33,11 +33,13 @@ class Nav extends Component {
           </div> */}
         </nav>
         {type === 'mobile' && (
-          <div className={styles.hamburger} onClick={this.toggleHamburger}>
-            <div className={styles.bar1}></div>
-            <div className={styles.bar2}></div>
-            <div className={styles.bar3}></div>
-          </div>
+          display === 'none'
+            ? <div className={styles.hamburger} onClick={this.toggleMobileNav}>
+                <div className={styles.bar1}></div>
+                <div className={styles.bar2}></div>
+                <div className={styles.bar3}></div>
+              </div>
+            : <div className={styles.hamburger} onClick={this.toggleMobileNav}>X</div>
         )}
       </Fragment>
     )
