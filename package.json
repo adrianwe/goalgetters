@@ -21,7 +21,8 @@
     "lodash.chunk": "^4.2.0",
     "react-anchor-link-smooth-scroll": "^1.0.10",
     "react-google-recaptcha": "^0.12.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7"
   },
   "keywords": [
     "gatsby"

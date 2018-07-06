@@ -5,19 +5,18 @@
 
 .blogImage {
   width: 100%;
-  object-fit: cover;  
+  max-height: 140vh;
+  object-fit: cover;
 }
 
 .blogContent {
   height: auto;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 10%;
   background-color: white;
   opacity: 1;
 }
 
 .blogTitle {
-  padding-top: 5rem;
   padding-bottom: 5rem;
   font-family: headerfont;
   font-size: 6rem;
@@ -103,5 +102,12 @@
 
 .mainText h1 {
   font-size: 2rem;
+  line-height: 3.5rem;
 }
+
+.mainText {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
 }

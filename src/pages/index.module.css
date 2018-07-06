@@ -38,12 +38,10 @@
 /*Main Text*/
 
 .intro {
-  padding-top: 10rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  margin: 10%;
   height: auto;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: "intro-disclaimer intro-text";
   grid-gap: 3rem;
 }
@@ -157,40 +155,41 @@
 
 .sloganImageContainer {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
+  min-height: 40rem;
 }
 
 .sloganImage {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
+  min-height: 40rem;
   object-fit: cover;  
-  object-position: center;
+  object-position: left;
 }
 
 .sloganText {
   color: var(--my-color3);
   position: absolute;
-  top: 15vh;
-  left: 10%;
+  top: 25vh;
+  left: 5%;
   width: 25rem;
   font-size: 5rem;
-  line-height: 6rem;
+  line-height: 5rem;
 }
 
 
 /*Main Text*/
 
 .intro {
-  padding: 2rem;
   height: auto;
-  width: 100%;
+  width: auto;
   display: block;
 }
 
 .introDisclaimer {
   margin-bottom: 3rem;
   font-size: 4rem;
-  padding-top: 2rem;
+  padding-top: 0;
 }
 
 .introText {

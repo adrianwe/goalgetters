@@ -25,7 +25,7 @@ export default class Footer extends Component {
           <div className={styles.landingNewsletter__form}>
             <form onSubmit={this.handleSubmit}>
               <div className={styles.email}>
-                <input type='email' name='email' placeholder='Email' onChange={e => this.setState({ email: e.target.value })} />
+                <input required type='email' name='email' placeholder='Email' onChange={e => this.setState({ email: e.target.value })} />
               </div>
               <div className={styles.submitButton}>
                 <input type='submit' value='Anmelden' />

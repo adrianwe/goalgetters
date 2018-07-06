@@ -33,14 +33,9 @@
 
 @media (max-width: 80rem) {
 
-.header {
-  background: none;
-}
-
 .sloganText {
-  top: 50vh;
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 10vw;
+  line-height: 14vw;
 }
 
 }
