@@ -109,7 +109,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 50vh;
+  height: auto;
   width: 100%;
   background-color: var(--my-color1);
   display: none;
