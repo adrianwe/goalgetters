@@ -85,7 +85,13 @@ export default class Inspiration extends Component {
                   <Link to={`/post/${slug}`}>
                     <div className={styles.blogPreviewContainer}>
                       <div className={styles.listviewBlogImageContainer}>
-                        <Img sizes={image.sizes} className={styles.listviewBlogImage} />
+                        <Img sizes={image.sizes} className={styles.listviewBlogImage} style={{
+                          position: "absolute",
+                          left: 0,
+                          top: 0,
+                          width: "100%",
+                          height: "100%"
+                        }}/>
                       </div>
                       <div className={styles.blogExcerptContainer}>
                         <div className={styles.blogArticleListviewMainTitle}>{title}</div>
