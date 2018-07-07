@@ -113,8 +113,13 @@
   max-height: 40rem;
   width: 100%;
   background-color: var(--my-color1);
-  display: none;
+  transform: translateY(-100%);
+  transition: transform 300ms ease-out;
   border-bottom: 3px solid var(--my-color2);
+}
+
+.mobileNavToggled {
+  transform: translateY(0);
 }
 
 .mobileNav__items {

@@ -5,12 +5,12 @@ import styles from './header.module.css'
 
 class Nav extends Component {
   state = {
-    display: 'none'
+    display: false
   }
 
   toggleMobileNav = () => {
     this.setState((prevState) => ({
-      display: prevState.display === 'none' ? 'block' : 'none'
+      display: !prevState.display
     }))
   }
 
@@ -20,11 +20,11 @@ class Nav extends Component {
 
     return (
       <Fragment>
-        <nav className={styles[`${type}Nav`]} style={{ display: type === 'mobile' && display }}>
+        <nav className={`${styles[`${type}Nav`]} ${type === 'mobile' && display && styles.mobileNavToggled}`}>
           <ul className={styles[`${type}Nav__items`]}>
             {navigation.map(navItem => (
               <li key={`${type}_${navItem.linkSlug}`} className={styles[`${type}Nav__item`]}>
-                <Link to={`/${navItem.linkSlug}`} onClick={() => this.setState({ display: 'none'})}>{navItem.linkName}</Link>
+                <Link to={`/${navItem.linkSlug}`} onClick={() => this.setState({ display: false })}>{navItem.linkName}</Link>
               </li>
             ))}
           </ul>
@@ -34,7 +34,7 @@ class Nav extends Component {
           </div> */}
         </nav>
         {type === 'mobile' && (
-          display === 'none'
+          !display
             ? <div className={styles.hamburger} onClick={this.toggleMobileNav}>
                 <FaBars />
               </div>
