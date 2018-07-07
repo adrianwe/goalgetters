@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
-import chunk from 'lodash.chunk'
 import styles from './grid.module.css'
 
 if (typeof window !== 'undefined') {
@@ -74,41 +73,38 @@ export default class Inspiration extends Component {
               <p className={styles.allTopics} >alles anzeigen</p>
             </Link>
           )}
-        </div>
-
-        {chunk(this.props.data.allContentfulBlogPost.edges.slice(0, this.state.postsToShow), 10).map((chunk, i) => (
-          <div key={i} className={styles.blogArticleListview}>
-            {chunk.map(edge => {
-              const { id, slug, image, title, body, tags } = edge.node
-              return (
-                <div key={id} className={styles.blogArticleListview__element}>
-                  <Link to={`/post/${slug}`}>
-                    <div className={styles.blogPreviewContainer}>
-                      <div className={styles.listviewBlogImageContainer}>
-                        <Img sizes={image.sizes} className={styles.listviewBlogImage} style={{
-                          position: "absolute",
-                          left: 0,
-                          top: 0,
-                          width: "100%",
-                          height: "100%"
-                        }}/>
-                      </div>
-                      <div className={styles.blogExcerptContainer}>
-                        <div className={styles.blogArticleListviewMainTitle}>{title}</div>
-                        <div className={styles.blogArticleExcerpt}>{body.childMarkdownRemark.excerpt}</div>
-                        <div className={styles.tags}>
-                          {tags.map(tag => (
-                            <p key={tag.id}>#{tag.tag}</p>
-                          ))}
-                        </div>
+        </div>  
+        <div className={styles.blogArticleListview}>
+          {this.props.data.allContentfulBlogPost.edges.slice(0, this.state.postsToShow).map(edge => {
+            const { id, slug, image, title, body, tags } = edge.node
+            return (
+              <div key={id} className={styles.blogArticleListview__element}>
+                <Link to={`/post/${slug}`}>
+                  <div className={styles.blogPreviewContainer}>
+                    <div className={styles.listviewBlogImageContainer}>
+                      <Img sizes={image.sizes} className={styles.listviewBlogImage} style={{
+                        position: 'absolute',
+                        left: 0,
+                        top: 0,
+                        width: '100%',
+                        height: '100%'
+                      }}/>
+                    </div>
+                    <div className={styles.blogExcerptContainer}>
+                      <div className={styles.blogArticleListviewMainTitle}>{title}</div>
+                      <div className={styles.blogArticleExcerpt}>{body.childMarkdownRemark.excerpt}</div>
+                      <div className={styles.tags}>
+                        {tags.map(tag => (
+                          <p key={tag.id}>#{tag.tag}</p>
+                        ))}
                       </div>
                     </div>
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-        ))}
+                  </div>
+                </Link>
+              </div>
+            )
+          })}
+        </div>
         {this.props.data.allContentfulBlogPost.edges.length > this.postsChunk && !this.state.showingMore && (
           <div className={styles.loadMore}>
             <div className={styles.loadMore__button} onClick={this.handleShowMoreClick}>mehr laden</div>

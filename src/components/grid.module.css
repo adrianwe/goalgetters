@@ -74,17 +74,8 @@
   margin: 1rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 23rem 23rem 23rem 23rem 23rem 23rem 23rem 23rem;
-  grid-template-areas: "article-1 article-2" 
-                       "article-1 article-4" 
-                       "article-3 article-4" 
-                       "article-3 article-5"
-                       "article-6 article-5" 
-                       "article-7 article-8" 
-                       "article-7 article-9" 
-                       "article-10 article-9";
-  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(23rem, auto);
 }
 
 
@@ -93,44 +84,13 @@
   position: relative;
 }
 
-.blogArticleListview__element:nth-child(1) {
-    grid-area: article-1;
-}
-
-.blogArticleListview__element:nth-child(2) {
-    grid-area: article-2;
-}
-
-.blogArticleListview__element:nth-child(3) {
-    grid-area: article-3;
-}
-
-.blogArticleListview__element:nth-child(4) {
-    grid-area: article-4;
-}
-
-.blogArticleListview__element:nth-child(5) {
-    grid-area: article-5;
-}
-
-.blogArticleListview__element:nth-child(6) {
-    grid-area: article-6;
-}
-
-.blogArticleListview__element:nth-child(7) {
-    grid-area: article-7;
-}
-
-.blogArticleListview__element:nth-child(8) {
-    grid-area: article-8;
-}
-
-.blogArticleListview__element:nth-child(9) {
-    grid-area: article-9;
-}
-
-.blogArticleListview__element:nth-child(10) {
-    grid-area: article-10;
+.blogArticleListview__element:nth-child(10n + 1),
+.blogArticleListview__element:nth-child(10n + 3),
+.blogArticleListview__element:nth-child(10n + 4),
+.blogArticleListview__element:nth-child(10n + 5),
+.blogArticleListview__element:nth-child(10n + 7),
+.blogArticleListview__element:nth-child(10n + 9) {
+  grid-row: auto / span 2;
 }
 
 
