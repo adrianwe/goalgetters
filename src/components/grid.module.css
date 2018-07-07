@@ -74,8 +74,8 @@
   margin: 1rem;
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 50%;
-  grid-template-rows: 23rem 23rem 23rem 23rem 23rem 23rem 23rem 23rem ;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 23rem 23rem 23rem 23rem 23rem 23rem 23rem 23rem;
   grid-template-areas: "article-1 article-2" 
                        "article-1 article-4" 
                        "article-3 article-4" 
