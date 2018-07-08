@@ -20,9 +20,9 @@ export default class Inspiration extends Component {
     }
   }
 
-  update() {
+  update = () => {
     const distanceToBottom = document.documentElement.scrollHeight - (window.scrollY + window.innerHeight)
-    if (this.state.showingMore && distanceToBottom < 100) {
+    if (this.state.showingMore && distanceToBottom < 400) {
       this.setState(prevState => ({ postsToShow: prevState.postsToShow + this.postsChunk }))
     }
     this.ticking = false
@@ -31,7 +31,7 @@ export default class Inspiration extends Component {
   handleScroll = () => {
     if (!this.ticking) {
       this.ticking = true
-      requestAnimationFrame(() => this.update())
+      requestAnimationFrame(this.update)
     }
   }
 
