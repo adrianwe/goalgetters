@@ -21,11 +21,6 @@ export const query = graphql`
             }
           }
           title
-          body {
-            childMarkdownRemark {
-              excerpt
-            }
-          }
           tags {
             id
             tag

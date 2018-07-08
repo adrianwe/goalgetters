@@ -30,7 +30,7 @@ export default ({ data }) => {
           <div key={link.landingLinkHeader} className={index % 2 === 0 ? styles.landingLink2 : styles.landingLink1}>
             <Link to='/inspiration'>
               <div className={styles.landingLinkHeader}>#{link.landingLinkHeader}</div>
-              <div>{link.landingLinkText} -></div>
+              <div className={styles.landingLinkText}>{link.landingLinkText} -></div>
             </Link>
           </div>
         ))}

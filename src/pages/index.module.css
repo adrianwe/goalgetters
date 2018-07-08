@@ -81,21 +81,24 @@
   text-align: center;
 }
 
+.landingLink1,
+.landingLink2 {
+  padding-top: 5rem;
+  transition: all 0.5s ease;
+}
+
 .landingLink1 {
   grid-area: landing1;
-  padding-top: 5rem;
   background-color: var(--my-color2);
-  transition: all 0.5s ease;
 }
 
 .landingLink2 {
   grid-area: landing2;
-  padding-top: 5rem;
   background-color: var(--my-color3);
-  transition: all 0.5s ease;
 } 
 
-.landingLink1 a, .landingLink2 a {
+.landingLink1 a,
+.landingLink2 a {
   text-decoration: none;
   color: white;
 }
@@ -108,7 +111,8 @@
   color: whitesmoke;
 }
 
-.landingLink1:hover, .landingLink2:hover {
+.landingLink1:hover,
+.landingLink2:hover {
   cursor: pointer;
   transition: background-color 0.5s ease;
   background-color: var(--my-color1);
@@ -204,22 +208,29 @@
 
 .landingLinks {
   margin: 0;
-  height: 50rem;
   display: block;
+  height: auto;
 }
 
-.landingLink1, .landingLink2 {
-  height: 25rem;
-  padding-top: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.landingLink1,
+.landingLink2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 25rem;
+  height: auto;
+  padding: 0 1rem;
 }
 
 .landingLinkHeader {
   font-size: 5rem;
   line-height: 5rem;
-  padding-top: 6rem;
-  padding-bottom: 3rem;
+  padding: 6rem 0 2rem 0;
+}
+
+.landingLinkText {
+  padding-bottom: 6rem;
 }
 
 /*Quote Box*/

@@ -76,32 +76,26 @@ export default class Inspiration extends Component {
         </div>  
         <div className={styles.blogArticleListview}>
           {this.props.data.allContentfulBlogPost.edges.slice(0, this.state.postsToShow).map(edge => {
-            const { id, slug, image, title, body, tags } = edge.node
+            const { id, slug, image, title, tags } = edge.node
             return (
-              <div key={id} className={styles.blogArticleListview__element}>
-                <Link to={`/post/${slug}`}>
-                  <div className={styles.blogPreviewContainer}>
-                    <div className={styles.listviewBlogImageContainer}>
-                      <Img sizes={image.sizes} className={styles.listviewBlogImage} style={{
-                        position: 'absolute',
-                        left: 0,
-                        top: 0,
-                        width: '100%',
-                        height: '100%'
-                      }}/>
-                    </div>
-                    <div className={styles.blogExcerptContainer}>
-                      <div className={styles.blogArticleListviewMainTitle}>{title}</div>
-                      <div className={styles.blogArticleExcerpt}>{body.childMarkdownRemark.excerpt}</div>
-                      <div className={styles.tags}>
-                        {tags.map(tag => (
-                          <p key={tag.id}>#{tag.tag}</p>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              </div>
+              <Link key={id} to={`/post/${slug}`} className={styles.blogArticleListview__element}>
+                <div className={styles.blogTitle}>{title}</div>
+                <div className={styles.blogTags}>
+                  {tags.map(tag => (
+                    <p key={tag.id}>#{tag.tag}</p>
+                  ))}
+                </div>
+                <Img sizes={image.sizes} style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  filter: 'brightness(40%)',
+                  zIndex: -1
+                }} />
+              </Link>
             )
           })}
         </div>

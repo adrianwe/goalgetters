@@ -116,7 +116,7 @@
   max-height: 40rem;
   width: 100%;
   background-color: var(--my-color1);
-  transform: translateY(-100%);
+  transform: translateY(-105%);
   transition: transform 300ms ease-out;
   border-bottom: 3px solid var(--my-color2);
 }

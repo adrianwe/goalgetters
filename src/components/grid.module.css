@@ -35,7 +35,6 @@
   transition: all 0.5s ease;
 }
 
-
 .tagFilter .allTopics {
   text-decoration: none;
   display: inline-block;
@@ -62,15 +61,13 @@
   cursor: pointer;
 }
 
-
 .activeTag p {
   background-color: var(--my-color2);
   color: white; 
 }
 
 
-
-/*Main Content Grid Alternative*/
+/*Main Content Grid*/
 
 .blogArticleListview {
   margin: 1rem;
@@ -78,12 +75,6 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(23rem, auto);
-}
-
-
-.blogArticleListview__element {
-  overflow: hidden;
-  position: relative;
 }
 
 .blogArticleListview__element:nth-child(10n + 1),
@@ -96,70 +87,41 @@
 }
 
 
-.blogArticleListview__element a {
+.blogArticleListview__element {
   text-decoration: none;
-  color: black;
-}
-
-.blogPreviewContainer {
-  height: 100%;
-  width: 100%;
-}
-
-.listviewBlogImageContainer {
-  width: 100%;
-  height: 100%;
-}
-
-.listviewBlogImage {
-  object-fit: cover;  
-  filter: brightness(40%);
-}
-
-.blogExcerptContainer {
-  width: 100%;
-  height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
-  top: 0;
-  text-align: center;
-  transition: all 0.5s ease;
+  align-items: center;
+  font-size: 2rem;
+  transition: background-color 0.5s ease;
 }
 
-.blogArticleListviewMainTitle {
+.blogArticleListview__element:hover {
+  transition: background-color 0.25s ease-in;
+  background-color: var(--my-color2);
+}
+
+.blogTitle {
   color: white;
   padding: 1rem;
   font-size: 3.5rem;
   font-weight: bold;
   line-height: 5rem;
-  text-align: center;
 }
 
-.blogArticleExcerpt {
-  color: black;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  display: none;
-}
-
-.blogExcerptContainer:hover {
-  transition: background-color 0.25s ease-in;
-  background-color: var(--my-color2);
-}
-
-.tags {
-  padding-top: 2rem;
+.blogTags {
   color: white;
   font-size: 2rem;
   line-height: 3rem;
+  margin: 2rem 1rem 0 1rem;
 }
 
-.tags p {
+.blogTags p {
   display: inline-block;
   border-bottom: 4px solid var(--my-color2);
-  margin: 0.5rem;
+  margin: 0.5rem 0 1rem 0.5rem;
 }
 
 
@@ -200,36 +162,22 @@
   flex-flow: column; 
   flex-wrap: wrap;
   align-items: center;
-  margin: 0;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin: 0 1%;
 }
 
 .blogArticleListview__element {
   margin-bottom: 1%;
   width: 100%;
-  overflow: hidden;
-  position: relative;
+  min-height: 40vh;
+  height: auto;
 }
 
-.blogArticleListview__element a {
-  text-decoration: none;
-  color: black;
-}
-
-.listviewBlogImageContainer {
-  width: 100%;
-  height: 40vh;
-}
-
-.blogArticleListviewMainTitle {
-  padding: 1rem;
+.blogTitle {
   font-size: 2.5rem;
   line-height: 4rem;
 }
 
-.tags {
-  padding-top: 0;
+.blogTags {
   font-size: 1.5rem;
   line-height: 2rem;
 }
