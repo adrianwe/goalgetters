@@ -27,6 +27,7 @@
   text-align: center;
   font-family: headerfont;
   width: 50rem;
+  transition: all 0.5s ease;
 }
 
 .sloganText:hover {
@@ -84,12 +85,14 @@
   grid-area: landing1;
   padding-top: 5rem;
   background-color: var(--my-color2);
+  transition: all 0.5s ease;
 }
 
 .landingLink2 {
   grid-area: landing2;
   padding-top: 5rem;
   background-color: var(--my-color3);
+  transition: all 0.5s ease;
 } 
 
 .landingLink1 a, .landingLink2 a {

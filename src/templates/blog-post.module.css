@@ -60,6 +60,7 @@
   border-bottom: 4px solid var(--my-color2);
   font-size: 2rem;
   margin: 0.4rem;
+  transition: all 0.5s ease;
 }
 
 .tags p:hover {

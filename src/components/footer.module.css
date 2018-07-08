@@ -39,6 +39,7 @@
   background-color: var(--my-color2);
   color: white;
   border: none;
+  transition: all 0.5s ease;
 }
 
 .landingNewsletter__form input[type=submit]:hover {
