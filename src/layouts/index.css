@@ -5,13 +5,9 @@
   src: url(../fonts/Odachi.woff);
 }
 
-
 * {
   box-sizing: border-box;
 }
-
-
-/*Page*/
 
 html {
   -ms-text-size-adjust: 100%;
@@ -30,4 +26,3 @@ body {
   height: 100%;
   width: 100%;
 }
-
