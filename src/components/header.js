@@ -20,6 +20,7 @@ class Nav extends Component {
 
     return (
       <Fragment>
+        {type === 'mobile' && display && <div className={styles.backdrop} onClick={() => this.setState({ display: false })}></div>}
         <nav className={`${styles[`${type}Nav`]} ${type === 'mobile' && display && styles.mobileNavToggled}`}>
           <ul className={styles[`${type}Nav__items`]}>
             {navigation.map(navItem => (
