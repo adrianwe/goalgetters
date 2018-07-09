@@ -1,0 +1,41 @@
+@import "../layouts/variables.css";
+
+.navBackground {
+  height: 10rem;
+  width: 100%;
+  max-width:100%;
+  background-color: var(--my-color1);
+}
+
+.pageTitle {
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  font-family: headerfont;
+  font-size: 10vh;
+  color: var(--my-color1);
+  text-align: center;
+}
+
+.pageMain {
+  width: 100%;
+  margin-bottom: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about {
+  height: auto;
+  width: 50vw;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  text-align: left;
+  padding-top: 5rem;
+}
+
+.aboutPhoto {
+  height: auto;
+  width: 50vw;
+}
+

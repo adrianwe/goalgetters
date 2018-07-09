@@ -41,7 +41,7 @@ export default class Footer extends Component {
           <nav className={styles.mainFooter__nav}>
             <ul className={styles.mainFooter__links}>
               <li className={styles.mainFooter__link}>
-                <Link to='/'>Home</Link>
+                <Link to='/about'>About</Link>
               </li>
               <li className={styles.mainFooter__link}>
                 <Link to='/impressum'>Impressum/Datenschutz</Link>
