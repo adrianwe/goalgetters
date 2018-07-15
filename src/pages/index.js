@@ -28,7 +28,7 @@ export default ({ data }) => {
       <div className={styles.landingLinks}>
         {landingLinks.map((link, index) => (
           <div key={link.landingLinkHeader} className={index % 2 === 0 ? styles.landingLink2 : styles.landingLink1}>
-            <Link to='/inspiration'>
+            <Link to={`/${link.landingLinkUrl}`}>
               <div className={styles.landingLinkHeader}>#{link.landingLinkHeader}</div>
               <div className={styles.landingLinkText}>{link.landingLinkText} -></div>
             </Link>
@@ -65,6 +65,7 @@ export const query = graphql`
       landingLinks {
         landingLinkHeader
         landingLinkText
+        landingLinkUrl
       }
       quoteOfDay {
         quoteTitle
