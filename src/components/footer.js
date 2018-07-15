@@ -35,10 +35,10 @@ export default class Footer extends Component {
           </div>
           {this.state.result && (
             <div className={this.state.result.result === 'success' ? styles.mailChimpSuccess : styles.mailChimpError}>
-              <div className={styles.cross} >
+              <div dangerouslySetInnerHTML={{ __html: this.state.result.msg }}></div>
+              <div className={styles.cross} onClick={() => this.setState({ result: null })}>
                 <FaClose />
               </div>
-              <div className={styles.mailText} dangerouslySetInnerHTML={{ __html: this.state.result.msg }}></div>
             </div>
           )}
           <div className={styles.impressumText}>Mit deiner Anmeldung erklärst du dich mit unseren <Link to='/impressum'>Datenschutzbedingungen </Link> einverstanden.</div>

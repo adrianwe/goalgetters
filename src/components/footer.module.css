@@ -94,14 +94,18 @@
 
 
 .mailChimpSuccess, .mailChimpError {
+  display: flex;
+  flex-direction: row;
   color: white;
   max-width: 90rem;
   background-color: rgba(0, 0, 0, 0.219);
   opacity: 0.9;
-  font-size: 2rem;
-  line-height: 5rem;
-  padding: 3%;
+  line-height: 3rem;
   margin-bottom: 5rem;
+}
+
+.mailChimpSuccess div, .mailChimpError div {
+  padding: 1rem;
 }
 
 .mailChimpError {
@@ -109,10 +113,12 @@
 }
 
 .cross {
-  padding: 1rem;
-  cursor: pointer;
   font-size: 3rem;
   color: white;
+}
+
+.cross svg {
+  cursor: pointer;
 }
 
 /*Main Content for small Screen*/
