@@ -112,7 +112,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 80vh;
+  height: auto;
   width: 100%;
   background-color: var(--my-color1);
   transform: translateY(-105%);
@@ -135,7 +135,7 @@
 }
 
 .mobileNav__item {
-  padding-bottom: 4rem;
+  margin: 1rem;
 }
 
 .mobileNav__item a {

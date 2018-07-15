@@ -246,3 +246,13 @@
 }
 
 }
+
+@media (max-width: 60rem) and (orientation: landscape) {
+
+.sloganText {
+  color: var(--my-color3);
+  position: absolute;
+  top: 40vh;
+}
+
+}
