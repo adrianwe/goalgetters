@@ -92,6 +92,7 @@
   font-size: 1.5rem;
 }
 
+
 .mailChimpSuccess, .mailChimpError {
   color: white;
   max-width: 90rem;
@@ -107,6 +108,12 @@
   background-color: coral;
 }
 
+.cross {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+}
 
 /*Main Content for small Screen*/
 

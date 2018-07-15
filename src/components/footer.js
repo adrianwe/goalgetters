@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Link from 'gatsby-link'
+import { FaClose } from 'react-icons/lib/fa'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 import styles from './footer.module.css'
 
@@ -33,7 +34,12 @@ export default class Footer extends Component {
             </form>
           </div>
           {this.state.result && (
-            <div className={this.state.result.result === 'success' ? styles.mailChimpSuccess : styles.mailChimpError} dangerouslySetInnerHTML={{ __html: this.state.result.msg }}></div>
+            <div className={this.state.result.result === 'success' ? styles.mailChimpSuccess : styles.mailChimpError}>
+              <div className={styles.cross} >
+                <FaClose />
+              </div>
+              <div className={styles.mailText} dangerouslySetInnerHTML={{ __html: this.state.result.msg }}></div>
+            </div>
           )}
           <div className={styles.impressumText}>Mit deiner Anmeldung erklärst du dich mit unseren <Link to='/impressum'>Datenschutzbedingungen </Link> einverstanden.</div>
         </div>
