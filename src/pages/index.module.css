@@ -46,7 +46,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "intro-disclaimer intro-text";
-  grid-gap: 3rem;
+  grid-gap: 1rem;
 }
 
 .introDisclaimer {
