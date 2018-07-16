@@ -39,7 +39,9 @@
 /*Main Text*/
 
 .intro {
-  margin: 10%;
+  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
