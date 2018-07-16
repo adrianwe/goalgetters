@@ -12,6 +12,8 @@
 .blogContent {
   height: auto;
   margin: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
   background-color: white;
   opacity: 1;
 }
@@ -95,6 +97,12 @@
 /*Main Content for small Screen*/
 
 @media (max-width: 80rem) {
+
+.blogContent {
+  margin: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 .blogTitle {
   font-size: 4rem;
