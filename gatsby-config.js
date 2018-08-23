@@ -29,6 +29,19 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-remove-trailing-slashes',
-    'gatsby-plugin-sitemap'
+    'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank'
+            }
+          }
+        ]
+      }
+    }
   ]
 }
